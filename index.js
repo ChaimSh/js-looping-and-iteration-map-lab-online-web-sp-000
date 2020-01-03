@@ -4,3 +4,12 @@ function lowerCaseDrivers(drivers) {
     return driver.toLowerCase()
   } );
 }
+
+function nameToAttributes(list) {
+  return list.map( function(drivers) {
+    const driverFirstName = drivers.splt(' ')[0];
+    const driverLastName = drivers.split(' ')[1];
+
+    return { firstName: driverFirstName, lastname: driverLastName };
+  });
+}
