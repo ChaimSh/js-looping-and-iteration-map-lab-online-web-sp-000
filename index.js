@@ -10,6 +10,6 @@ function nameToAttributes(list) {
     const driverFirstName = drivers.split(' ')[0];
     const driverLastName = drivers.split(' ')[1];
 
-    return { firstName: driverFirstName, lastname: driverLastName };
+    return { firstName: driverFirstName, lastName: driverLastName };
   });
 }
